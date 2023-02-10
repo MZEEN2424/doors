@@ -752,11 +752,3 @@ end
 -- Run the created entity
 Spawner.runEntity(entityTable)
 end)
-
-Section:NewButton("", "", function()
-Section:NewButton("", "", function()
-Section:NewButton("", "", function()
-Section:NewButton("", "", function()
-Section:NewButton("", "", function()
-Section:NewButton("", "", function()
-Section:NewButton("", "", function()
