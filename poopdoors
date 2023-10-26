@@ -1180,9 +1180,6 @@ end)
 
 
 if hookmetamethod and newcclosure and getnamecallmethod then
-	window_entities:AddLabel({ Name = "Do not click when playing the" })
-	window_entities:AddLabel({ Name = "heartbeat minigame if you have" })
-	window_entities:AddLabel({ Name = "'always win heartbeat' on!" })
 	window_entities:AddToggle({
 		Name = "Always win Heartbeat minigame",
 		Value = false,
@@ -1274,7 +1271,7 @@ workspace.ChildAdded:Connect(function(inst)
 					else
 						game.Players.LocalPlayer.Character:MoveTo(OldPos + Vector3.new(0,avoidingYvalue,0))
 					end
-					--game.Players.LocalPlayer.Character:MoveTo(OldPos + Vector3.new(0,125,0))
+					--game.Players.LocalPlayer.Character:MoveTo(OldPos + Vector3.new(0,500,0))
 				end)
 
 				inst.Destroying:Wait()
@@ -1290,7 +1287,7 @@ workspace.ChildAdded:Connect(function(inst)
 end)
 
 --[[if hookmetamethod and newcclosure and getnamecallmethod then
-	window_entities.toggle("no eyes damage (didnt tested it)",false,function(val)
+	window_entities:AddToggle("no eyes damage (didnt tested it)",false,function(val)
 		flags.noeyesdamage = val
 	end)
 
